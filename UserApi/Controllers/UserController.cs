@@ -21,6 +21,10 @@ namespace UserApi.Controllers
                 _items.Add(new User() { Id = Id, Value = GetRandomString(Id) });
             }
         }
+        /// <summary>
+        /// Get Favorites Repositories
+        /// <returns>  IActionResult Of Values </returns>
+        /// </summary>
         [HttpGet]
         public IActionResult GetValues([FromQuery] Filter filter)
         {
