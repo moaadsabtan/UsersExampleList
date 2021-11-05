@@ -16,8 +16,6 @@ import {
 export class AppComponent implements OnInit {
   users$: Observable<User[]> | undefined;
   isloading$: Observable<boolean> | undefined;
-  title = 'endlessscrollngrx';
-
   constructor(private store: Store<any>) {}
 
   ngOnInit() {
